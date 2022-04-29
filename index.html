@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
     <header>
@@ -122,58 +123,45 @@
             </div>
         </section>
 
-        <section class="scroll_badges margin_top">
-            <div class="d_flex">
-              
-                <div>
+        <section class="scroll_badges">
+          
+            <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                <div class="carousel-cell">
                     <span class="material-symbols-outlined">
                         star
                         </span>
                     <p>High Quality
                         Guarantee</p>  
                 </div>
-
-                <div>
+                <div class="carousel-cell">
                     <span class="material-symbols-outlined">
-                        help
-                        </span>
-                    <p>High Quality
-                        Guarantee</p>  
-                </div>
-            
-                <div>
+                    help
+                    </span>
+                <p>High Quality
+                    Guarantee</p> 
+                 </div>
+                <div class="carousel-cell">
                     <span class="material-symbols-outlined">
-                        check_circle
-                        </span>
-                    <p>High Quality
-                        Guarantee</p>  
+                    check_circle
+                    </span>
+                <p>High Quality
+                    Guarantee</p>  
                 </div>
-                <div>
+                <div class="carousel-cell">
                     <span class="material-symbols-outlined">
-                        local_shipping
-                        </span>
-                    <p>High Quality
-                        Guarantee</p>  
+                    check_circle
+                    </span>
+                <p>High Quality
+                    Guarantee</p>  
                 </div>
-
-                <div>
+                <div class="carousel-cell">
                     <span class="material-symbols-outlined">
-                        timer
-                        </span>
-                    <p>High Quality
-                        Guarantee</p>  
+                    check_circle
+                    </span>
+                <p>High Quality
+                    Guarantee</p>  
                 </div>
-                <div>
-                    <span class="material-symbols-outlined">
-                        undo
-                        </span>
-                    <p>High Quality
-                        Guarantee</p>  
-                </div>
-
-
-
-
+                
             </div>
         </section>
 
@@ -286,6 +274,9 @@
 
         </div>
     </footer>
-    
+
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </body>
 </html>

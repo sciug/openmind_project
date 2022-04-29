@@ -192,29 +192,6 @@ h2 {
   line-height: 24px;
 }
 
-.scroll_badges .d_flex {
-  overflow-x: scroll;
-  padding-bottom: 3rem;
-  justify-content: space-between;
-}
-.scroll_badges .d_flex div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* width: 30%; */
-  margin: 0 3rem;
-  text-align: center;
-}
-.scroll_badges .d_flex div span {
-  font-size: 18px;
-  margin-bottom: 0.5rem;
-}
-.scroll_badges .d_flex div p {
-  font-weight: bold;
-  width: 100px;
-}
-
 .contact_us h2 {
   font-size: 24px;
   line-height: 28.13px;
@@ -408,9 +385,6 @@ body.product_page .single_product .product .product_data img:first-of-type {
   object-fit: cover;
   height: 375px;
 }
-body.product_page .single_product .product .product_data .img_secondary {
-  display: none;
-}
 body.product_page .single_product .product .product_data span {
   position: absolute;
   top: 2rem;
@@ -487,6 +461,58 @@ body.product_page .single_product .show_details ul li .text {
   padding: 2rem;
   font-size: 16px;
   line-height: 24px;
+}
+
+/* CAROUSEL */
+.scroll_badges .main-carousel {
+  padding: 2rem 0;
+  padding-bottom: 4rem;
+}
+.scroll_badges .carousel-cell {
+  width: 45%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.scroll_badges .carousel-cell span {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+.scroll_badges .carousel-cell p {
+  font-weight: bold;
+  width: 100px;
+}
+.scroll_badges .flickity-page-dots {
+  bottom: 0px;
+}
+.scroll_badges .flickity-page-dots .dot {
+  height: 4px;
+  width: 20%;
+  margin: 0;
+  border-radius: 0;
+}
+.scroll_badges .flickity-button {
+  display: none;
+}
+
+/* CAROUSEL PRODUCT IMAGE */
+.single_product .product .product_data .main-carousel .carousel-cell {
+  width: 100%;
+}
+.single_product .product .product_data .main-carousel .flickity-page-dots {
+  bottom: 0px;
+}
+.single_product .product .product_data .main-carousel .flickity-page-dots .dot {
+  height: 4px;
+  width: 25%;
+  margin: 0;
+  border-radius: 0;
+}
+.single_product .product .product_data .main-carousel .flickity-button {
+  display: none;
 }
 
 @media screen and (min-width: 376px) {
