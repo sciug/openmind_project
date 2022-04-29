@@ -561,6 +561,7 @@ body.product_page{
                         text-transform: capitalize;
                         font-weight: 700;
                         font-size: 16px;
+                       
 
                     }
                     button{
@@ -575,6 +576,7 @@ body.product_page{
                         padding:2rem;
                         font-size:16px;
                         line-height: 24px;
+                        display: none;
                     }
                     
                    
@@ -660,7 +662,7 @@ body.product_page{
                 }
                  }
                 .flickity-button {
-                  display: none;
+                  opacity: .3;
                 } 
             }
         }
@@ -855,7 +857,7 @@ body.product_page{
     }
 
 
-    /****** PRODUCT PAGE *******/
+    /****** PRODUCTS PAGE *******/
     body.products_page{
         .products{
             h1{
@@ -923,6 +925,22 @@ body.product_page{
         }
     
 
+    }
+
+
+    body.product_page{
+        .single_product{
+            .product{
+                display: grid;
+            grid-template-columns: repeat(3,minmax(1em,1fr));
+            .product_data{
+                grid-column: span 2;
+            }
+            }
+
+
+        }
+    
     }
   
 
